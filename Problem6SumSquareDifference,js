@@ -1,0 +1,14 @@
+function sumSquareDifference(number) {
+  var sumSquare = 0;
+  var squareSum = 0;
+
+  for(var i = 1; i <= number; i++){
+    sumSquare = sumSquare + Math.pow(i,2);
+    squareSum = squareSum + i;
+  }
+  
+  squareSum = Math.pow(squareSum,2);
+
+  var result = squareSum - sumSquare;
+  return result;
+}

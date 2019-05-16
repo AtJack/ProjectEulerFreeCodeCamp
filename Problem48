@@ -1,0 +1,8 @@
+def selfPowers(num):
+    result = 0
+    for i in range(1,num+1):
+        result += i**i
+    resultStr = str(result)
+    return resultStr[-10:]
+
+print(selfPowers(1000))

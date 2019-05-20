@@ -1,0 +1,14 @@
+def FibonacciLength(lenNumber):
+    a = 1
+    b = 1
+    zaehler = 2
+    while True:
+         b = a + b
+         a = b - a
+         bstr = str(b)
+         zaehler += 1
+         if lenNumber == len(bstr):
+             print(zaehler)
+             break
+
+FibonacciLength(1000)

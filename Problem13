@@ -1,0 +1,11 @@
+def largeSum():
+    sum = 0
+    input = []
+    file = open("text.txt","r")
+    for i in range(1,101):
+        input.append(file.readline())
+    for i in range(0,100):
+        sum += int(input[i])
+    print (str(sum)[:10])
+
+largeSum()
